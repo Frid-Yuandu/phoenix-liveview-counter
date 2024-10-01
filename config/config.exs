@@ -34,7 +34,7 @@ config :esbuild,
 # Configure tailwind (the version is required)
 config :tailwind,
   version: "3.4.3",
-  path: "/home/frid_yuandu/coding/elixir-project/counter/_build/tailwindcss-linux-x64",
+  path: Path.expand("../_build/tailwindcss-linux-x64", __DIR__),
   counter: [
     args: ~w(
       --config=tailwind.config.js
