@@ -60,10 +60,13 @@ defmodule Counter.MixProject do
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
       {:jason, "~> 1.2"},
+      # {:plug_cowboy, "~> 2.5"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.5"},
+
       # Track test coverage: github.com/parroty/excoveralls
-      {:excoveralls, "~> 0.16.0", only: [:test, :dev]}
+      {:excoveralls, "~> 0.16.0", only: [:test, :dev]},
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
     ]
   end
 

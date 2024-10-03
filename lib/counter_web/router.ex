@@ -13,6 +13,6 @@ defmodule CounterWeb.Router do
   scope "/", CounterWeb do
     pipe_through :browser
 
-    live("/", Counter)
+    live "/", CounterLive
   end
 end
